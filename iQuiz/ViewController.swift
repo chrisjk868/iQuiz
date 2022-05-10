@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         "Science"
     ]
     
-    var vcs : [UITableViewController] = []
+    var vcs : [UIViewController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,15 +39,18 @@ class ViewController: UIViewController {
         subjectTable.register(nib, forCellReuseIdentifier: "SubjectTableCell")
         subjectTable.delegate = self
         subjectTable.dataSource = self
-        let math_vc = MyTableViewController()
-        vcs.append(math_vc)
+        let math_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Maths")
+        let marvel_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Marvel")
+        let science_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Science")
+        vcs.append(contentsOf: [math_vc, marvel_vc, science_vc])
     }
     
     @IBAction func settingsClick(_ sender: Any) {
         let settingsAlert = UIAlertController(title: "Settings", message: "Settings go here", preferredStyle: UIAlertController.Style.alert)
-        settingsAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-        NSLog("The \"OK\" alert occured.")
-        }))
+        settingsAlert.addAction(
+            UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"),
+                          style: .default,
+                          handler: { _ in NSLog("The \"OK\" alert occured.")}))
         self.present(settingsAlert, animated: true, completion: nil)
     }
     
@@ -56,8 +59,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Tapped \(subjects[indexPath.row])")
-//        navigationController?.pushViewController(vcs[indexPath.row], animated: true)
+        navigationController?.pushViewController(vcs[indexPath.row], animated: true)
     }
     
 }

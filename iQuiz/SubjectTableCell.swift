@@ -16,12 +16,17 @@ class SubjectTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        subjectImage.layer.borderWidth = 1
+        subjectImage.layer.masksToBounds = false
+        subjectImage.layer.borderColor = UIColor.gray.cgColor
+        subjectImage.layer.cornerRadius = subjectImage.frame.height / 2
+        subjectImage.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
+        
     }
     
 }
