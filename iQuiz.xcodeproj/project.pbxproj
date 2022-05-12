@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D97A66B8282C69DC0015084D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A66B7282C69DC0015084D /* CheckBox.swift */; };
 		D9FF3D9C282877EF00942DA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3D9B282877EF00942DA2 /* AppDelegate.swift */; };
 		D9FF3D9E282877EF00942DA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3D9D282877EF00942DA2 /* SceneDelegate.swift */; };
 		D9FF3DA0282877EF00942DA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3D9F282877EF00942DA2 /* ViewController.swift */; };
@@ -15,13 +16,13 @@
 		D9FF3DA8282877F100942DA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9FF3DA6282877F100942DA2 /* LaunchScreen.storyboard */; };
 		D9FF3DB7282895C400942DA2 /* SubjectTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3DB5282895C400942DA2 /* SubjectTableCell.swift */; };
 		D9FF3DB8282895C400942DA2 /* SubjectTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FF3DB6282895C400942DA2 /* SubjectTableCell.xib */; };
-		D9FF3DBA2828DA5800942DA2 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3DB92828DA5800942DA2 /* MyTableViewController.swift */; };
 		D9FF3DBC2829C68900942DA2 /* MathsQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3DBB2829C68900942DA2 /* MathsQuiz.swift */; };
 		D9FF3DBE2829C7B600942DA2 /* MarvelQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3DBD2829C7B600942DA2 /* MarvelQuiz.swift */; };
 		D9FF3DC02829C7C800942DA2 /* ScienceQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FF3DBF2829C7C800942DA2 /* ScienceQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D97A66B7282C69DC0015084D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		D9FF3D98282877EF00942DA2 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FF3D9B282877EF00942DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9FF3D9D282877EF00942DA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		D9FF3DA9282877F100942DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9FF3DB5282895C400942DA2 /* SubjectTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableCell.swift; sourceTree = "<group>"; };
 		D9FF3DB6282895C400942DA2 /* SubjectTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableCell.xib; sourceTree = "<group>"; };
-		D9FF3DB92828DA5800942DA2 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		D9FF3DBB2829C68900942DA2 /* MathsQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsQuiz.swift; sourceTree = "<group>"; };
 		D9FF3DBD2829C7B600942DA2 /* MarvelQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelQuiz.swift; sourceTree = "<group>"; };
 		D9FF3DBF2829C7C800942DA2 /* ScienceQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceQuiz.swift; sourceTree = "<group>"; };
@@ -73,14 +73,14 @@
 				D9FF3D9F282877EF00942DA2 /* ViewController.swift */,
 				D9FF3DB5282895C400942DA2 /* SubjectTableCell.swift */,
 				D9FF3DBB2829C68900942DA2 /* MathsQuiz.swift */,
-				D9FF3DBD2829C7B600942DA2 /* MarvelQuiz.swift */,
 				D9FF3DBF2829C7C800942DA2 /* ScienceQuiz.swift */,
+				D9FF3DBD2829C7B600942DA2 /* MarvelQuiz.swift */,
 				D9FF3DA1282877EF00942DA2 /* Main.storyboard */,
 				D9FF3DA6282877F100942DA2 /* LaunchScreen.storyboard */,
 				D9FF3DB6282895C400942DA2 /* SubjectTableCell.xib */,
+				D97A66B7282C69DC0015084D /* CheckBox.swift */,
 				D9FF3DA4282877F100942DA2 /* Assets.xcassets */,
 				D9FF3DA9282877F100942DA2 /* Info.plist */,
-				D9FF3DB92828DA5800942DA2 /* MyTableViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -159,10 +159,10 @@
 			files = (
 				D9FF3DA0282877EF00942DA2 /* ViewController.swift in Sources */,
 				D9FF3DBE2829C7B600942DA2 /* MarvelQuiz.swift in Sources */,
+				D97A66B8282C69DC0015084D /* CheckBox.swift in Sources */,
 				D9FF3DB7282895C400942DA2 /* SubjectTableCell.swift in Sources */,
 				D9FF3DBC2829C68900942DA2 /* MathsQuiz.swift in Sources */,
 				D9FF3D9C282877EF00942DA2 /* AppDelegate.swift in Sources */,
-				D9FF3DBA2828DA5800942DA2 /* MyTableViewController.swift in Sources */,
 				D9FF3D9E282877EF00942DA2 /* SceneDelegate.swift in Sources */,
 				D9FF3DC02829C7C800942DA2 /* ScienceQuiz.swift in Sources */,
 			);
