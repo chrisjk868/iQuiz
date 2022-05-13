@@ -32,20 +32,23 @@ class ViewController: UIViewController {
     
     let subject_attributes = [
         "Maths" : [
-            "total" : 2,
             "answerKey" : ["144", "60"]
         ],
         "Marvel" : [
-            "total" : 2,
-            "answerKey" : []
+            "answerKey" : ["6", "2008"]
         ],
         "Science" : [
-            "total" : 2,
-            "answerKey" : []
+            "answerKey" : ["1", "1687"]
         ]
     ]
     
-//    var vcs : [UIViewController] = []
+    var maths_correctness : [Bool] = [false, false]
+    
+    var marvel_correctness : [Bool] = [false, false]
+    
+    var science_correctness : [Bool] = [false, false]
+    
+    var vcs : [UIViewController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,10 +57,10 @@ class ViewController: UIViewController {
         subjectTable.register(nib, forCellReuseIdentifier: "SubjectTableCell")
         subjectTable.delegate = self
         subjectTable.dataSource = self
-//        let math_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Maths")
-//        let marvel_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Marvel")
-//        let science_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Science")
-//        vcs.append(contentsOf: [math_vc, marvel_vc, science_vc])
+        let math_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Maths")
+        let marvel_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Marvel")
+        let science_vc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Science")
+        vcs.append(contentsOf: [math_vc, marvel_vc, science_vc])
     }
     
     @IBAction func settingsClick(_ sender: Any) {
@@ -74,22 +77,8 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let index : Int = indexPath.item
-        switch index {
-        case 0:
-            let MathsVC = storyboard?.instantiateViewController(withIdentifier: "Maths") as! MathsQuiz
-            navigationController?.pushViewController(MathsVC, animated: true)
-        case 1:
-            let MarvelVC = storyboard?.instantiateViewController(withIdentifier: "Marvel") as! MarvelQuiz
-            navigationController?.pushViewController(MarvelVC, animated: true)
-        case 2:
-            let ScienceVC = storyboard?.instantiateViewController(withIdentifier: "Science") as! ScienceQuiz
-            navigationController?.pushViewController(ScienceVC, animated: true)
-        default :
-            print("Do Nothing")
-        }
-        
-//        navigationController?.pushViewController(vcs[indexPath.row], animated: true)
+
+        navigationController?.pushViewController(vcs[indexPath.row], animated: true)
     }
     
 }
