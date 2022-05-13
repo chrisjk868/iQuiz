@@ -48,6 +48,7 @@ class MathsQuiz: UIViewController {
     
     @IBAction func submitAnsOne(_ sender: Any) {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
+            currentChoiceOne = choicesOne.titleForSegment(at: choicesOne.selectedSegmentIndex)!
             rootVC.maths_correctness[0] = (currentChoiceOne == answerKey![0])
         }
     }
@@ -58,6 +59,7 @@ class MathsQuiz: UIViewController {
     
     @IBAction func submitAnsTwo(_ sender: Any) {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
+            currentChoiceTwo = choicesTwo.titleForSegment(at: choicesTwo.selectedSegmentIndex)!
             rootVC.maths_correctness[1] = (currentChoiceTwo == answerKey![1])
         }
     }
