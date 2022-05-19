@@ -31,11 +31,11 @@ class MathsQuiz: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
-            guard let answers = rootVC.subject_attributes["Maths"]!["answerKey"]! as? [String] else {
-                print("Error")
-                return
-            }
-            answerKey = answers
+//            guard let answers = rootVC.subject_attributes["Maths"]!["answerKey"]! as? [String] else {
+//                print("Error")
+//                return
+//            }
+//            answerKey = answers
         }
         updateAnswerOne()
         updateAnswerTwo()
@@ -49,7 +49,7 @@ class MathsQuiz: UIViewController {
     @IBAction func submitAnsOne(_ sender: Any) {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
             currentChoiceOne = choicesOne.titleForSegment(at: choicesOne.selectedSegmentIndex)!
-            rootVC.maths_correctness[0] = (currentChoiceOne == answerKey![0])
+//            rootVC.maths_correctness[0] = (currentChoiceOne == answerKey![0])
         }
     }
     
@@ -60,7 +60,7 @@ class MathsQuiz: UIViewController {
     @IBAction func submitAnsTwo(_ sender: Any) {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
             currentChoiceTwo = choicesTwo.titleForSegment(at: choicesTwo.selectedSegmentIndex)!
-            rootVC.maths_correctness[1] = (currentChoiceTwo == answerKey![1])
+//            rootVC.maths_correctness[1] = (currentChoiceTwo == answerKey![1])
         }
     }
     
@@ -102,7 +102,7 @@ class MathsQuiz: UIViewController {
             return
         } else {
             if let rootVC = navigationController?.viewControllers.first as? ViewController {
-                numCorrect = rootVC.maths_correctness.filter{$0 == true}.count
+//                numCorrect = rootVC.maths_correctness.filter{$0 == true}.count
             }
             scoreLabel.text = "Score: \(numCorrect) out of 2"
             switch numCorrect {
@@ -123,10 +123,11 @@ class MathsQuiz: UIViewController {
     
     func getCorrectness(qNum : Int) -> Bool {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
-            return rootVC.maths_correctness[qNum]
+//            return rootVC.maths_correctness[qNum]
         } else {
             return false
         }
+        return true // delete to revert
     }
     
     // MARK: - Navigation

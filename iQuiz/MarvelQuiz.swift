@@ -30,11 +30,11 @@ class MarvelQuiz: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
-            guard let answers = rootVC.subject_attributes["Marvel"]!["answerKey"]! as? [String] else {
-                print("Error")
-                return
-            }
-            answerKey = answers
+//            guard let answers = rootVC.subject_attributes["Marvel"]!["answerKey"]! as? [String] else {
+//                print("Error")
+//                return
+//            }
+//            answerKey = answers
         }
         updateAnswerOne()
         updateAnswerTwo()
@@ -48,7 +48,7 @@ class MarvelQuiz: UIViewController {
     @IBAction func submitAnsOne(_ sender: Any) {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
             currentChoiceOne = choicesOne.titleForSegment(at: choicesOne.selectedSegmentIndex)!
-            rootVC.marvel_correctness[0] = (currentChoiceOne == answerKey![0])
+//            rootVC.marvel_correctness[0] = (currentChoiceOne == answerKey![0])
         }
     }
     
@@ -59,7 +59,7 @@ class MarvelQuiz: UIViewController {
     @IBAction func submitAnsTwo(_ sender: Any) {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
             currentChoiceTwo = choicesTwo.titleForSegment(at: choicesTwo.selectedSegmentIndex)!
-            rootVC.marvel_correctness[1] = (currentChoiceTwo == answerKey![1])
+//            rootVC.marvel_correctness[1] = (currentChoiceTwo == answerKey![1])
         }
     }
     
@@ -101,7 +101,7 @@ class MarvelQuiz: UIViewController {
             return
         } else {
             if let rootVC = navigationController?.viewControllers.first as? ViewController {
-                numCorrect = rootVC.marvel_correctness.filter{$0 == true}.count
+//                numCorrect = rootVC.marvel_correctness.filter{$0 == true}.count
             }
             scoreLabel.text = "Score: \(numCorrect) out of 2"
             switch numCorrect {
@@ -122,10 +122,11 @@ class MarvelQuiz: UIViewController {
     
     func getCorrectness(qNum : Int) -> Bool {
         if let rootVC = navigationController?.viewControllers.first as? ViewController {
-            return rootVC.marvel_correctness[qNum]
+//            return rootVC.marvel_correctness[qNum]
         } else {
             return false
         }
+        return true // delete to revert
     }
     
     // MARK: - Navigation

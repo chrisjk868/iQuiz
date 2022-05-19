@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionScene" customModule="iQuiz" customModuleProvider="target">
+            <connections>
+                <outlet property="ansChoice1" destination="fFB-16-2nW" id="M2e-QP-4M8"/>
+                <outlet property="ansChoice2" destination="3LD-um-DRM" id="XTV-uF-UNp"/>
+                <outlet property="ansChoice3" destination="qm7-Wi-hu6" id="4WD-XN-v3M"/>
+                <outlet property="ansChoice4" destination="CGh-RO-IEJ" id="TWl-N5-Fed"/>
+                <outlet property="questionLabel" destination="NWd-i6-Ueb" id="KGs-Xr-PJz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-iB-2yK">
+                    <rect key="frame" x="171.5" y="384.5" width="71.5" height="127"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFB-16-2nW" customClass="AnswerChoicesStyle" customModule="iQuiz" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="71.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LD-um-DRM">
+                            <rect key="frame" x="0.0" y="35.5" width="71.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm7-Wi-hu6">
+                            <rect key="frame" x="0.0" y="71" width="71.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer 4" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGh-RO-IEJ">
+                            <rect key="frame" x="0.0" y="106.5" width="71.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-i6-Ueb">
+                    <rect key="frame" x="165.5" y="310.5" width="83" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqg-bl-qEX">
+                    <rect key="frame" x="172" y="561.5" width="70" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                    <connections>
+                        <action selector="submitBtnClick:" destination="-1" eventType="touchUpInside" id="846-yi-IuJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Zqg-bl-qEX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AUZ-kK-FvT"/>
+                <constraint firstItem="fAL-iB-2yK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BiA-Kc-FI8"/>
+                <constraint firstItem="NWd-i6-Ueb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fa6-an-dRj"/>
+                <constraint firstItem="fAL-iB-2yK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jP0-jV-eX3"/>
+                <constraint firstItem="Zqg-bl-qEX" firstAttribute="top" secondItem="fAL-iB-2yK" secondAttribute="bottom" constant="50" id="uv4-AF-1Vy"/>
+                <constraint firstItem="fAL-iB-2yK" firstAttribute="top" secondItem="NWd-i6-Ueb" secondAttribute="bottom" constant="50" id="xeO-pP-L2C"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="107"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

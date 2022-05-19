@@ -114,7 +114,7 @@ Number of Hydrogen?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Question 1" id="iVX-oZ-DCy">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="b5W-1s-SS9">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="9Dl-ZM-vca">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="9Dl-ZM-vca">
                                 <rect key="frame" x="316" y="5" width="78" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -184,7 +184,7 @@ Stones are there?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Question 1" id="eGj-ae-dJI">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="mbX-rd-qZc">
-                            <button key="customView" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qKt-F5-HKQ">
+                            <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qKt-F5-HKQ">
                                 <rect key="frame" x="316" y="5" width="78" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -335,7 +335,7 @@ Stones are there?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Answer 1" id="XYO-1z-q5E">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="E5h-9z-rFV">
-                            <button key="customView" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7G3-2u-J3g">
+                            <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="7G3-2u-J3g">
                                 <rect key="frame" x="334.5" y="5" width="59.5" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -546,7 +546,7 @@ must be?</string>
                     <navigationItem key="navigationItem" title="Question 2" id="Uuv-En-lh7">
                         <barButtonItem key="backBarButtonItem" title="Back" id="X8X-lI-4o9"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="WLZ-4B-Ti2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="EgM-v8-OSw">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="EgM-v8-OSw">
                                 <rect key="frame" x="316" y="5" width="78" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -669,7 +669,7 @@ first Iron Man made?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Question 2" id="00h-4n-Tx2">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Mqr-HO-Idi">
-                            <button key="customView" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dxY-rH-xNy">
+                            <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dxY-rH-xNy">
                                 <rect key="frame" x="316" y="5" width="78" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -797,7 +797,7 @@ the Principia Mathematica?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Question 2" id="O43-FN-BzM">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="EmE-1T-QXS">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kLj-YD-UCa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kLj-YD-UCa">
                                 <rect key="frame" x="316" y="5" width="78" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -849,7 +849,7 @@ the Principia Mathematica?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="Kba-Jp-n2H">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="0o6-y5-ZM8">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Qac-Jm-MEG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Qac-Jm-MEG">
                                 <rect key="frame" x="332" y="5" width="62" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -981,7 +981,7 @@ Number of Hydrogen?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Answer 1" id="3sD-Wd-rRQ">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="TWJ-Sq-1My">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="3an-Pp-7iu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="3an-Pp-7iu">
                                 <rect key="frame" x="334.5" y="5" width="59.5" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -1047,7 +1047,7 @@ first Iron Man made?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Answer 2" id="5Kr-Po-SZ8">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="SUI-Vc-Tr1">
-                            <button key="customView" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="K78-UP-xdm">
+                            <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="K78-UP-xdm">
                                 <rect key="frame" x="334.5" y="5" width="59.5" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1128,7 +1128,7 @@ the Principia Mathematica?</string>
                     </view>
                     <navigationItem key="navigationItem" title="Answer 2" id="Spl-j8-HfD">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="A00-71-mZV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dbX-us-LaE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dbX-us-LaE">
                                 <rect key="frame" x="334.5" y="5" width="59.5" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
